@@ -18,17 +18,17 @@
   <link 
     rel="icon" 
     href="/">
-  <title>Archive</title>
+  <title>素数阶完全适应性安全MA-ABE方案</title>
   
     
       <meta 
         property="og:title" 
-        content="Archive">
+        content="素数阶完全适应性安全MA-ABE方案">
     
     
       <meta 
         property="og:url" 
-        content="http://shuiyixin.github.io/archives/index.html">
+        content="http://shuiyixin.github.io/2024/12/18/crypto-FullySecurity-ABE3/index.html">
     
     
       <meta 
@@ -36,6 +36,30 @@
         content="https://wx.qlogo.cn/mmopen/TlU8J8wGozaDCBakOmU0JYHzYQ2f70NuTPPCsEsLZyMxibp8axvPHBDiaHF3icxhjF4LZh2xP72Spfzice0Pe4cSAoEp46f9W5ED/64">
     
     
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2024-12-18">
+      <meta 
+        property="og:article:modified_time" 
+        content="2024-12-18">
+      <meta 
+        property="og:article:author" 
+        content="水亦心">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="属性基加密">
+        
+          <meta 
+            property="og:article:tag" 
+            content="合数阶">
+        
+      
     
   
   
@@ -52,6 +76,8 @@
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
   
   
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
   
   <script>
     function loadScript(url, cb) {
@@ -292,6 +318,18 @@
                <div class="sticky-tablet">
   
   
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%B4%A0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AC%A6%E5%8F%B7"><span class="toc-text">一、素阶双线性群及其相关符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7"><span class="toc-text">1、符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A0%E6%95%B0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4"><span class="toc-text">2、素数阶双线性群</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%A4%8D%E5%90%88%E9%98%B6%E5%88%B0%E7%B4%A0%E6%95%B0%E9%98%B6%E8%BD%AC%E6%8D%A2%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84"><span class="toc-text">二、复合阶到素数阶转换框架的基础结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E5%85%AC%E5%BC%8F"><span class="toc-text">1、一般公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E9%97%B4%E5%85%AC%E5%BC%8F"><span class="toc-text">2、行间公式</span></a></li></ol></li></ol>
+      </div>
+    </article>
+  
   
   <article class="card card-content categories-widget">
     <div class="categories-card">
@@ -361,131 +399,183 @@
   </article>
   
   
-    <article class="card card-content widescreen-archive archive-widget">
-      <div class="archive-card">
-  <div class="archive-card-header">
-    <i 
-      class="iconfont icon-wodebaobiao" 
-      style="padding-right: 2px;">
-    </i>Archive
-  </div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-    
-      <a 
-        href="/archives/2024" 
-        class="archive-card-list-item">
-        2024
-        <span class="archive-card-list-item-badge">4</span>
-      </a>
-    
-  </div>
-</div>
-    </article>
-  
 </div>
             </aside>
             <main class="main-column">
               
-<div class="card card-content">
-  <h1 class="widget-title">Archive</h1>
-</div>
-<div class="archive-timeline">
-  
-  
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      素数阶完全适应性安全MA-ABE方案
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2024-12-18T12:01:43.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2024-12-18</span>
+    </time>
     
-      <div class="archive-timeline-tag"><span>2024</span></div>
+      <span class="dot"></span>
+      
+        <a 
+          href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/" 
+          class="post-meta-link">
+          密码学
+        </a>
+      
+        <a 
+          href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/%E5%B1%9E%E6%80%A7%E5%9F%BA%E5%8A%A0%E5%AF%86/" 
+          class="post-meta-link">
+          属性基加密
+        </a>
       
     
-    <div class="archive-timeline-item">
-      <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date">2024-12-18</div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="/2024/12/18/crypto-FullySecurity-ABE3/"
-              class="archive-timeline-post-item">
-              素数阶完全适应性安全MA-ABE方案
-            </a>
-          </div>
-        </div>
+    
+      <span class="dot"></span>
+      <span>748 words</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/%E5%B1%9E%E6%80%A7%E5%9F%BA%E5%8A%A0%E5%AF%86/" 
+            class="post-meta-link">
+            属性基加密
+          </a>
+        
+          
+            <span class="dot"></span>
+          
+          <a 
+            href="/tags/%E5%90%88%E6%95%B0%E9%98%B6/" 
+            class="post-meta-link">
+            合数阶
+          </a>
+        
       </div>
     </div>
   
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <h2 id="一素阶双线性群及其相关符号">一、素阶双线性群及其相关符号</h2>
+<h3 id="符号">1、符号</h3>
+<p>设<span class="math inline">\(\mathbf{A}\)</span>是环<span class="math inline">\(\mathbb{Z}_q\)</span>上的矩阵。我们用<span class="math inline">\(span(\mathbf{A})\)</span>来表示<span class="math inline">\(\mathbf{A}\)</span>的列空间，我们用<span class="math inline">\(span^m(\mathbf{A})\)</span>来表示宽度为<span class="math inline">\(m\)</span>的矩阵，其中每一列都位于<span class="math inline">\(span(\mathbf{A})\)</span>中；这意味着<span class="math inline">\(\mathbf{M}\leftarrow span^m(\mathbf{A})\)</span>是一个宽度为<span class="math inline">\(m\)</span>的随机矩阵，其中每一列都是从<span class="math inline">\(span(\mathbf{A})\)</span>中均匀选择的。我们使用<span class="math inline">\(basis(\mathbf{A})\)</span>来表示<span class="math inline">\(span(\mathbf{A})\)</span>的一个基，使用<span class="math inline">\((\mathbf{A}_1,\mathbf{A}_2)\)</span>来表示矩阵<span class="math inline">\(\mathbf{A}_1\)</span>和<span class="math inline">\(\mathbf{A}_2\)</span>的按列连接。我们设<span class="math inline">\(\mathbf{I}\)</span>是单位矩阵，<span class="math inline">\(\mathbf{0}\)</span>是一个零矩阵。它的大小在上下文中就很清楚了。</p>
+<p>固定一个安全参数，对于任意双线性群参数<span class="math inline">\(\mathsf{G}=(p,\mathbb{G}_1,\mathbb{G}_2,\mathbb{G}_T,g_1,g_2,e)\)</span>和任意<span class="math inline">\(i=1,2\)</span>， <span class="math inline">\(T\)</span>与<span class="math inline">\(g_T=e(g_1,g_2)\)</span>，我们将<span class="math inline">\(g_i^{\mathbf{M}}\)</span>写为，其中求幂是按元素计算的。使用括号表示法时，定义如下群操作：</p>
+<p><span class="math display">\[
+\begin{array}{l}
+【 \mathbf{M} 】_{i} \boxplus 【 \mathbf{N} 】_{i}=【 \mathbf{M}+\mathbf{N} 】_{i} \\
+【 \mathbf{M} 】_{i} \boxminus 【 \mathbf{N} 】_{i}=【 \mathbf{M}-\mathbf{N} 】_{i} \\
+\mathbf{N} \odot 【 \mathbf{M} 】_{i}=【 \mathbf{N} \mathbf{M} 】_{i} \\
+【 \mathbf{M} 】_{i} \odot \mathbf{N}=【 \mathbf{M} \mathbf{N} 】_{i} \\
+e\left(【 \mathbf{M} 】_{1}, 【 \mathbf{N} 】_{2}\right)=【 \mathbf{M} \mathbf{N} 】_{T}
+\end{array}
+\]</span></p>
+<h3 id="素数阶双线性群">2、素数阶双线性群</h3>
+<p><span class="math inline">\(\mathbb{G}_1\)</span>，<span class="math inline">\(\mathbb{G}_2\)</span>和<span class="math inline">\(\mathbb{G}_T\)</span>都是阶为素数<span class="math inline">\(p = p(\lambda)\)</span>的乘法循环群，其中，群运算在安全参数<span class="math inline">\(\lambda\)</span>中是可有效计算的，并且在<span class="math inline">\(\mathbb{G}_1\)</span>和<span class="math inline">\(\mathbb{G}_2\)</span>之间不存在可有效计算的同构。<span class="math inline">\(g_1\)</span>，<span class="math inline">\(g_2\)</span>分别是<span class="math inline">\(\mathbb{G}_1\)</span>，<span class="math inline">\(\mathbb{G}_2\)</span>的生成元。<span class="math inline">\(e: \mathbb{G}\times \mathbb{G} \rightarrow \mathbb{G}_T\)</span>满足以下性质的有效可计算配对函数：</p>
+<p>-双线性性：对于所有元素<span class="math inline">\(u\in \mathbb{G}_1\)</span>，<span class="math inline">\(v\in \mathbb{G}_2\)</span>以及<span class="math inline">\(a, b\in \mathbb{Z}_p\)</span>，都有<span class="math inline">\(e(u^{a}, v^{b})=e(u, v)^{ab}\)</span>；</p>
+<p>-非退化性：<span class="math inline">\(e(g, g) \ne 1\)</span>；</p>
+<p>设<span class="math inline">\(\mathcal{G}\)</span>为一种算法，它以安全参数<span class="math inline">\(\lambda\)</span>的一元编码<span class="math inline">\(1^{\lambda}\)</span>为输入，输出一个不对称双线性群$ = (p, <span class="math inline">\(\mathbb{G}_1\)</span>, <span class="math inline">\(\mathbb{G}_2\)</span>, _T, g_1, g_2, e)$的描述。</p>
+<h2 id="二复合阶到素数阶转换框架的基础结构">二、复合阶到素数阶转换框架的基础结构</h2>
+<p>我们要模拟三个素数之积的复合序群。固定参数<span class="math inline">\(l_1, l_2, l_3, l_W\)</span>。选择随机数</p>
+<p><span class="math display">\[
+\mathbf{A}_1 \leftarrow \mathbb{Z}_p^{l \times l_1}, \mathbf{A}_2 \leftarrow \mathbb{Z}_p^{l \times l_2}, \mathbf{A}_3 \leftarrow \mathbb{Z}_p^{l \times l_3}
+\]</span></p>
+<p>其中<span class="math inline">\(l = l_1 + l_2 + l_3\)</span>。令<span class="math inline">\((\mathbf{A}_1^*||\mathbf{A}_2^*||\mathbf{A}_3^*)^{\top}\)</span>表示<span class="math inline">\((\mathbf{A}_1||\mathbf{A}_2||\mathbf{A}_3)^{\top}\)</span>的逆，即有<span class="math inline">\(\mathbf{A}_i^{\top}\mathbf{A}_i^* = \mathbf{I}\)</span>(非退化性)和<span class="math inline">\(\mathbf{A}_i^{\top}\mathbf{A}_j^* = \mathbf{0}\)</span>(正交性)。</p>
+<p>我们与复合阶群有以下对应关系：</p>
+<h3 id="一般公式">1、一般公式</h3>
+<p>$ a = b + c $ 表示 <code>加法</code> 运算</p>
+<p>$ a = b ^ c $ 表示 <code>指数</code> 运算</p>
+<h3 id="行间公式">2、行间公式</h3>
+<p>举例的行间公式：</p>
+<p><span class="math display">\[
+y = a x^3 + b x + c
+\]</span></p>
+
+  </div>
+  <div>
     
-    <div class="archive-timeline-item">
-      <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date">2024-12-18</div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="/2024/12/18/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/"
-              class="archive-timeline-post-item">
-              测试文档
-            </a>
-          </div>
-        </div>
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            水亦心
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://shuiyixin.github.io/2024/12/18/crypto-FullySecurity-ABE3/">
+            http://shuiyixin.github.io/2024/12/18/crypto-FullySecurity-ABE3/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
       </div>
-    </div>
+    
+  </div>
+</article>
+<div class="nav">
   
-    
-    <div class="archive-timeline-item">
-      <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date">2024-12-17</div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="/2024/12/17/testBlog/"
-              class="archive-timeline-post-item">
-              测试博客testBlog
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
   
-    
-    <div class="archive-timeline-item">
-      <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date">2024-12-17</div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="/2024/12/17/hello-world/"
-              class="archive-timeline-post-item">
-              Hello World
-            </a>
-          </div>
+    <div class="nav-item-next">
+      <a 
+        href="/2024/12/18/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">Next</div>
+          
+            <div class="nav-title">测试文档 </div>
+          
         </div>
-      </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
     </div>
   
 </div>
 
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%B4%A0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AC%A6%E5%8F%B7"><span class="toc-text">一、素阶双线性群及其相关符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7"><span class="toc-text">1、符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A0%E6%95%B0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4"><span class="toc-text">2、素数阶双线性群</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%A4%8D%E5%90%88%E9%98%B6%E5%88%B0%E7%B4%A0%E6%95%B0%E9%98%B6%E8%BD%AC%E6%8D%A2%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84"><span class="toc-text">二、复合阶到素数阶转换框架的基础结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E5%85%AC%E5%BC%8F"><span class="toc-text">1、一般公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E9%97%B4%E5%85%AC%E5%BC%8F"><span class="toc-text">2、行间公式</span></a></li></ol></li></ol>
+</div>
             </main>
             <aside class="right-column">
               <div class="sticky-widescreen">
   
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%B4%A0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AC%A6%E5%8F%B7"><span class="toc-text">一、素阶双线性群及其相关符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7"><span class="toc-text">1、符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A0%E6%95%B0%E9%98%B6%E5%8F%8C%E7%BA%BF%E6%80%A7%E7%BE%A4"><span class="toc-text">2、素数阶双线性群</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%A4%8D%E5%90%88%E9%98%B6%E5%88%B0%E7%B4%A0%E6%95%B0%E9%98%B6%E8%BD%AC%E6%8D%A2%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84"><span class="toc-text">二、复合阶到素数阶转换框架的基础结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E5%85%AC%E5%BC%8F"><span class="toc-text">1、一般公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E9%97%B4%E5%85%AC%E5%BC%8F"><span class="toc-text">2、行间公式</span></a></li></ol></li></ol>
+    </article>
   
   
   <article class="card card-content">
@@ -522,48 +612,6 @@
 </div>
   </article>
   
-  
-    <article class="card card-content">
-      <div class="archive-card">
-  <div class="archive-card-header">
-    <i 
-      class="iconfont icon-wodebaobiao" 
-      style="padding-right: 2px;">
-    </i>Archive
-  </div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-    
-      <a 
-        href="/archives/2024" 
-        class="archive-card-list-item">
-        2024
-        <span class="archive-card-list-item-badge">4</span>
-      </a>
-    
-  </div>
-</div>
-    </article>
   
 </div>
             </aside>
@@ -654,8 +702,52 @@
      
      
       
+
+  
+  
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    
+<script src="//cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-svg.js"></script>
+
+  
  
      
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
      
      
     <script src="/js/main.js"></script> 
