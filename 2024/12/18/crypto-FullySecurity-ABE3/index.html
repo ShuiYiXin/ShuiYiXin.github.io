@@ -341,17 +341,17 @@
   </div>
   <div class="categories-list">
     
-      <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-        <div class="categories-list-item">
-          密码学
-          <span class="categories-list-item-badge">1</span>
-        </div>
-      </a>
-    
       <a href="/categories/%E6%B5%8B%E8%AF%95/">
         <div class="categories-list-item">
           测试
           <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+        <div class="categories-list-item">
+          密码学
+          <span class="categories-list-item-badge">1</span>
         </div>
       </a>
     
@@ -377,9 +377,9 @@
   <div class="tags-list">
     
       <a 
-        href="/tags/%E5%B1%9E%E6%80%A7%E5%9F%BA%E5%8A%A0%E5%AF%86/" 
-        title="属性基加密">
-        <div class="tags-list-item">属性基加密</div>
+        href="/tags/%E6%B5%8B%E8%AF%95/" 
+        title="测试">
+        <div class="tags-list-item">测试</div>
       </a>
     
       <a 
@@ -389,9 +389,9 @@
       </a>
     
       <a 
-        href="/tags/%E6%B5%8B%E8%AF%95/" 
-        title="测试">
-        <div class="tags-list-item">测试</div>
+        href="/tags/%E5%B1%9E%E6%80%A7%E5%9F%BA%E5%8A%A0%E5%AF%86/" 
+        title="属性基加密">
+        <div class="tags-list-item">属性基加密</div>
       </a>
     
   </div>
@@ -555,7 +555,7 @@ w \in \mathbb{Z}_{N} &amp; \mapsto \mathbf{W} \in \mathbb{Z}_{p}^{\ell \times \e
 &amp;=(【\mathbf{W}_{A,u}^{\top} \mathbf{A}_{1}】_{1},【\mathbf{W}_{B,u}^{\top} \mathbf{A}_{1}】_{1}) \\
 \mathsf{MSK}_{u}&amp; =(\mathbf{W}_{A,u},\mathbf{W}_{B,u}). 
 \end{aligned}\]</span></p>
-<p><strong>Enc <span class="math inline">\((\mathsf{GP},\mathsf{msg},(M,\rho),\{\mathsf{PK}_{u} \})\)</span></strong> : 加密算法以全局参数 <span class="math inline">\(\mathbf{GP}\)</span> 、要加密的消息 <span class="math inline">\(\mathsf{msg} \in \mathbb{M}\)</span> 、一个LSSS访问结构 <span class="math inline">\((\mathbf{M},\rho)\)</span> （其中 <span class="math inline">\(\mathbf{M} = (\mathbf{M}_{x,j})_{\ell \times d}=(\mathbf{M}_{1},\ldots,\mathbf{M}_{\ell})^{\top} \in\mathbb{Z}_{N}^{\ell\times d}\)</span> ， <span class="math inline">\(\rho : [ \ell ] \rightarrow {\mathcal{A} } U\)</span> ）以及相关授权方的公钥 <span class="math inline">\(\{\mathsf{PK}_{u} \}\)</span> 作为输入。函数 $$ 将 <span class="math inline">\(\mathbf{M}\)</span> 的行（视为列向量）与授权方关联起来（回想一下我们假设每个授权方控制单个属性）。我们假设 $$ 是一个单射函数，即一个授权方/属性最多与 <span class="math inline">\(\mathbf{M}\)</span> 的一行相关联。</p>
+<p><strong>Enc <span class="math inline">\((\mathsf{GP},\mathsf{msg},(M,\rho),\{\mathsf{PK}_{u} \})\)</span></strong> : 加密算法以全局参数 <span class="math inline">\(\mathbf{GP}\)</span> 、要加密的消息 <span class="math inline">\(\mathsf{msg} \in \mathbb{M}\)</span> 、一个LSSS访问结构 <span class="math inline">\((\mathbf{M},\rho)\)</span> （其中 <span class="math inline">\(\mathbf{M} = (\mathbf{M}_{x,j})_{\ell \times d}=(\mathbf{M}_{1},\ldots,\mathbf{M}_{\ell})^{\top} \in\mathbb{Z}_{N}^{\ell\times d}\)</span> ， <span class="math inline">\(\rho : [ \ell ] \rightarrow {\mathcal{A} } U\)</span> ）以及相关授权方的公钥 <span class="math inline">\(\{\mathsf{PK}_{u} \}\)</span> 作为输入。函数 <span class="math inline">\(\rho\)</span> 将 <span class="math inline">\(\mathbf{M}\)</span> 的行（视为列向量）与授权方关联起来（回想一下我们假设每个授权方控制单个属性）。我们假设 <span class="math inline">\(\rho\)</span> 是一个单射函数，即一个授权方/属性最多与 <span class="math inline">\(\mathbf{M}\)</span> 的一行相关联。</p>
 <p>首先选择一个随机向量 $ _p^k $ 和随机矩阵 <span class="math inline">\(\mathbf{U}_{A},\mathbf{U}_{B} \leftarrow\mathbb{Z}_{p}^{3k\times(d-1)}\)</span> ，该过程如下生成密文：对于每一行 <span class="math inline">\(x\in[\ell]\)</span> ，它选择随机向量 <span class="math inline">\(\mathbf{s}_{A,x},\mathbf{s}_{B,x} \leftarrow\mathbb{Z}_{p}^{k}\)</span> 并输出密文。</p>
 <p><span class="math display">\[\mathsf{CT}=((\mathbf{M},\rho),C,\{C_{1,A,x},C_{2,A,x},C_{1,B,x},C_{2,B,x} \}_{x\in[\ell]}), \]</span></p>
 <p>其中 <span class="math inline">\(C=\mathsf{msg} \oplus \mathsf{Ext}(e(【\mathbf{A}_{1} \mathbf{d}】_{1},H), \mathsf{seed})\)</span> , 并且</p>
