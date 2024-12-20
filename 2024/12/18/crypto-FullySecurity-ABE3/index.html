@@ -341,17 +341,17 @@
   </div>
   <div class="categories-list">
     
-      <a href="/categories/%E6%B5%8B%E8%AF%95/">
-        <div class="categories-list-item">
-          测试
-          <span class="categories-list-item-badge">3</span>
-        </div>
-      </a>
-    
       <a href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/">
         <div class="categories-list-item">
           密码学
           <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E6%B5%8B%E8%AF%95/">
+        <div class="categories-list-item">
+          测试
+          <span class="categories-list-item-badge">3</span>
         </div>
       </a>
     
@@ -517,7 +517,7 @@ w \in \mathbb{Z}_{N} &amp; \mapsto \mathbf{W} \in \mathbb{Z}_{p}^{\ell \times \e
 <p><span class="math display">\[\begin{aligned}
 &amp;\mathbf{G}=(p,\mathbb{G}_{1},\mathbb{G}_{2},\mathbb{G}_{T},g_{1},g_{2},e) \\
 &amp;D=(\mathbf{G},【\mathbf{X}】_{t}) \\
-&amp;\mathsf{t} _0=\mathbf{X}u,t_{1} \leftarrow\mathbb{Z}_{p}^{\ell} 
+&amp;t_0=\mathbf{X}u,t_{1} \leftarrow\mathbb{Z}_{p}^{\ell} 
 \end{aligned}\]</span></p>
 <p>使得 <span class="math inline">\(\mathbf{X} \leftarrow\mathbb{Z}_{p}^{\ell\times k},\mathbf{u} \leftarrow\mathbb{Z}_{p}^{k}\)</span>。</p>
 <p><strong>假设 5.2</strong> (子群判定假设 <span class="math inline">\(\mathbf{SD}_{\mathbf{A}_{i} \mapsto \mathbf{A}_{i},\mathbf{A}_{j}}^{\mathbb{G}_1}\)</span> ， <span class="math inline">\(i, j \in \{ 1, 2, 3\}\)</span>)： 对所有的 <span class="math inline">\(i,j\in[3]\)</span> 并且 <span class="math inline">\(i\neq j\)</span> ， <span class="math inline">\(\mathsf{SD}_{\mathbf{A}_{i} \mapsto \mathbf{A}_{i},\mathbf{A}_{j}}^{\mathbb{G}_1}\)</span> 假设声明，对于任何PPT敌手 <span class="math inline">\(\mathcal{A}\)</span> ，存在一个可忽略的函数 <span class="math inline">\(\mathsf{negl}(\cdot)\)</span> ，使得对于任何安全参数 <span class="math inline">\(\lambda \in \mathbb{N}\)</span> 和对于所有 <span class="math inline">\(k \in [3]\setminus\{i,j\}\)</span> 都有</p>
@@ -526,11 +526,11 @@ w \in \mathbb{Z}_{N} &amp; \mapsto \mathbf{W} \in \mathbb{Z}_{p}^{\ell \times \e
 <p><span class="math display">\[\begin{aligned}
 &amp;\mathsf{G}=(p,\mathbb{G}_{1},\mathbb{G}_{2},\mathbb{G}_{T},g_{1},g_{2},e)\\
 &amp;\mathcal{D}=(\mathbb{G},【\mathbf{A}_{1}】_{1},【\mathbf{A}_{2}】_{1},【\mathbf{A}_{3}】_{1},\mathsf{basis}(\mathbf{A}_{i}^{*}),\mathsf{basis}(\mathbf{A}_{k}^{*}),\mathsf{basis}(\mathbf{A}_{i}^{*},\mathbf{A}_{j}^{*})),\\
-&amp;\mathbf{t}_{0} \leftarrow\mathsf{span}(\mathbf{A}_{i}),\mathbf{t}_{1} \leftarrow\mathsf{span}(\mathbf{A}_{i},\mathbf{A}_{j}).
+&amp;t_{0} \leftarrow\mathsf{span}(\mathbf{A}_{i}),t_{1} \leftarrow\mathsf{span}(\mathbf{A}_{i},\mathbf{A}_{j}).
 \end{aligned}\]</span></p>
 <p><strong>假设 5.3</strong> (子群判定假设 <span class="math inline">\(\mathbf{SD}_{\mathbf{B}_{i} \mapsto \mathbf{B}_{i},\mathbf{B}_{j}}^{\mathbb{G}_{2}}\)</span> ， <span class="math inline">\(i, j \in \{ 1, 2, 3\}\)</span> ): 对所有的 <span class="math inline">\(i,j\in[3]\)</span> 并且 <span class="math inline">\(i\neq j\)</span> ，the <span class="math inline">\(\mathsf{SD}_{\mathbf{B}_{i} \mapsto \mathbf{B}_{i},\mathbf{B}_{j}}^{(\mathbb{G}_{2})}\)</span> 假设声明，对于任何PPT敌手 <span class="math inline">\(\mathcal{A}\)</span> ，存在一个可忽略的函数 <span class="math inline">\(\mathsf{negl}(\cdot)\)</span> ，使得对于任何安全参数 <span class="math inline">\(\lambda \in \mathbb{N}\)</span> 和对于所有 <span class="math inline">\(k \in [3]\setminus\{i,j\}\)</span> 都有</p>
 <p><span class="math display">\[ 
-\mathsf{Adv}_{\mathcal{A}}^{\mathsf{SD}_{\mathbf{B}_{i} \mapsto \mathbf{B}_{i},\mathbf{B}_{j}}^{(\mathbb{G}_{2})}}(\lambda):=|\mathsf{Pr}[\mathcal{A}(\mathcal{D},【\mathbf{t}_{0}】_{2})=1]-\mathsf{Pr}[\mathcal{A}(\mathcal{D},【\mathbf{t}_{1}】_{2})=1]|
+\mathsf{Adv}_{\mathcal{A}}^{\mathsf{SD}_{\mathbf{B}_{i} \mapsto \mathbf{B}_{i},\mathbf{B}_{j}}^{(\mathbb{G}_{2})}}(\lambda):=|\mathsf{Pr}[\mathcal{A}(\mathcal{D},【t_{0}】_{2})=1]-\mathsf{Pr}[\mathcal{A}(\mathcal{D},【t_{1}】_{2})=1]|
  \]</span></p>
 <p>其中</p>
 <p><span class="math display">\[\begin{aligned}
@@ -550,7 +550,7 @@ w \in \mathbb{Z}_{N} &amp; \mapsto \mathbf{W} \in \mathbb{Z}_{p}^{\ell \times \e
 <p>在这里，我们给出了素阶双线性群中构造的MA-ABE。如前所述，我们假设每个授权方只控制一个属性，因此我们可以互换使用术语<code>授权方</code>和<code>属性</code>。</p>
 <p><strong>GlobalSetup <span class="math inline">\((1^{\lambda})\)</span></strong>: 全局设置算法接受一元编码的安全参数 <span class="math inline">\(1^{\lambda}\)</span> 。该过程首先选择一个素数 <span class="math inline">\(p\)</span> .然后生成一个阶为 <span class="math inline">\(p\)</span> 的双线性群 <span class="math inline">\(\mathbf{G}=(p,\mathbb{G}_{1},\mathbb{G}_{2},\mathbb{G}_{T},g_{1},g_{2},e)\)</span> 。 设 <span class="math inline">\(g_{1}, g_{2}\)</span> 分别为 <span class="math inline">\(\mathbb{G}_{1},\mathbb{G}_{2}\)</span> 的生成元。我们使用强种子随机性提取器 <span class="math inline">\(\mathsf{Ext}:\mathbb{G}_{T} \times S \rightarrow \mathbb{M}\)</span> ，其中 <span class="math inline">\(\mathbb{M} \subset\{0,1\}^{*}\)</span> 是消息空间， <span class="math inline">\(S\subset\{0,1\}^{*}\)</span> 是种子空间。该算法选取种子 <span class="math inline">\(\mathsf{seed} \leftarrow S\)</span> 。接下来，算法进行选择</p>
 <p><span class="math display">\[\mathbf{A}_1,\mathbf{A}_2,\mathbf{A}_3\leftarrow\mathbb{Z}_p^{3k\times k},\mathbf{h} \leftarrow\mathbb{Z}_p^k. \]</span></p>
-<p>令 <span class="math inline">\((\mathbf{A}_1^*\parallel\mathbf{A}_2^*\parallel\mathbf{A}_3^*)=\left((\mathbf{A}_1\parallel\mathbf{A}_2\parallel\mathbf{A}_3)^{-1} \right)^{\top}\)</span> 其中 <span class="math inline">\(\mathbf{A}_{1}^{*},\mathbf{A}_{2}^{*},\mathbf{A}_{3}^{*} \leftarrow \mathbb{Z}_{p}^{3k\times k}\)</span> 使得对于所有的 <span class="math inline">\(i,j\in[3]\)</span> ：当 <span class="math inline">\(i=j\)</span> 时 <span class="math inline">\(\mathbf{A}_{i}^{\top} \mathbf{A}_{j}^{*}=\mathbf{I}\)</span> ；当 <span class="math inline">\(i\neq j\)</span> 时， <span class="math inline">\(\mathbf{A}_{i}^{\top} \mathbf{A}_{j}^{*}=\mathbf{0}\)</span> 。 输出全局参数为 <span class="math inline">\({\mathsf{GP}}=({\mathsf{G}},【{\mathbf{A}}_{1}】_{1},H=【\mathbf{A}_{1}^{*}\mathbf{h}】_{2},\mathsf{seed})\)</span> 。 此外，我们假设所有参与方都可以访问哈希函数 <span class="math inline">\({\mathsf{H}:\{0,1\}^{*} \rightarrow \mathbb{G}_{2}^{3k}}\)</span> 。该函数将全局标识符 <span class="math inline">\(\mathsf{GID} \in \mathcal{GID}\)</span> 映射到 <span class="math inline">\(\mathbb{G}_2^{3k}\)</span> 中的随机向量。 即对所有的 <span class="math inline">\(\mathsf{GID} \in \mathcal{GID}\)</span> ，我们对某个 <span class="math inline">\(h_{\mathsf{GID}} \leftarrow \mathbb{Z}_{p}^{3k}\)</span> 有 <span class="math inline">\(\mathsf{H}(\mathsf{GID})=【h_{\mathsf{GID}}】_{2}\)</span> 。</p>
+<p>令 <span class="math inline">\((\mathbf{A}_1^*\parallel\mathbf{A}_2^*\parallel\mathbf{A}_3^*)=\left((\mathbf{A}_1\parallel\mathbf{A}_2\parallel\mathbf{A}_3)^{-1} \right)^{\top}\)</span> 其中 <span class="math inline">\(\mathbf{A}_{1}^{*},\mathbf{A}_{2}^{*},\mathbf{A}_{3}^{*} \leftarrow \mathbb{Z}_{p}^{3k\times k}\)</span> 使得对于所有的 <span class="math inline">\(i,j\in[3]\)</span> ：当 <span class="math inline">\(i=j\)</span> 时 <span class="math inline">\(\mathbf{A}_{i}^{\top} \mathbf{A}_{j}^{*}=\mathbf{I}\)</span> ；当 <span class="math inline">\(i\neq j\)</span> 时， <span class="math inline">\(\mathbf{A}_{i}^{\top} \mathbf{A}_{j}^{*}=\mathbf{0}\)</span> 。 输出全局参数为 <span class="math inline">\({\mathsf{GP}}=({\mathsf{G}},【{\mathbf{A}}_{1}】_{1},H=【\mathbf{A}_{1}^{*}\mathbf{h}】_{2},\mathsf{seed})\)</span> 。 此外，我们假设所有参与方都可以访问哈希函数 <span class="math inline">\({\mathsf{H}:\{0,1\}^{*} \rightarrow \mathbb{G}_{2}^{3k}}\)</span> 。该函数将全局标识符 <span class="math inline">\(\mathsf{GID} \in \mathcal{GID}\)</span> 映射到 <span class="math inline">\(\mathbb{G}_2^{3k}\)</span> 中的随机向量。 即对所有的 <span class="math inline">\(\mathsf{GID} \in \mathcal{GID}\)</span> ，我们对某个 <span class="math inline">\(\mathbf{h}_{\mathsf{GID}} \leftarrow \mathbb{Z}_{p}^{3k}\)</span> 有 <span class="math inline">\(\mathsf{H}(\mathsf{GID})=【\mathbf{h}_{\mathsf{GID}}】_{2}\)</span> 。</p>
 <p><strong>AuthSetup <span class="math inline">\((\mathbf{GP},u)\)</span></strong>: 给定全局参数 <span class="math inline">\(\mathbf{GP}\)</span> 和一个授权方索引 <span class="math inline">\(u\in\mathcal{AU}\)</span> ，该算法选择随机矩阵 <span class="math inline">\(\mathbf{W}_{A,u},\mathbf{W}_{B,u} \in\mathbb{Z}_{p}^{3k\times3k}\)</span> 并输出</p>
 <p><span class="math display">\[\begin{aligned}
 \mathsf{PK}_{u}&amp; =(P_{A,u}=\mathbf{W}_{A,u}^{\top} \odot【\mathbf{A}_{1}】_{1},P_{B,u}=\mathbf{W}_{B,u}^{\top} \odot【\mathbf{A}_{1}】_{1}) \\
@@ -575,27 +575,27 @@ w \in \mathbb{Z}_{N} &amp; \mapsto \mathbf{W} \in \mathbb{Z}_{p}^{\ell \times \e
 <p><span class="math display">\[\begin{aligned}&amp;K_{\mathsf{GID},A,u}=\mathbf{W}_{A,u} \odot(\mathsf{H}(\mathsf{GID})\cdot H)=【\mathbf{W}_{A,u} \cdot(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h})】_{2} \\&amp;K_{\mathsf{GID},B,u}=\mathbf{W}_{B,u} \odot\mathsf{H}(\mathsf{GID})=【\mathbf{W}_{B,u} \cdot\mathbf{h}_{\mathsf{GID}}】_{2} \end{aligned}\]</span></p>
 <p><strong>Dec <span class="math inline">\((\mathsf{GP}, \mathsf{CT}, \mathsf{GID}, \{\mathbf{SK}_{\mathsf{GID},u} \} )\)</span></strong>: 解密以全局参数 <span class="math inline">\(\mathsf{GP}\)</span>、一个针对LSSS访问结构 <span class="math inline">\((\mathbf{M},\rho)\)</span> 的密文 <span class="math inline">\(\mathsf{CT}\)</span>（其中<span class="math inline">\(M\in\mathbb{Z}_{N}^{\ell\times d}\)</span>且<span class="math inline">\(\rho:[\ell]\rightarrow\mathcal{A} \mathcal{U}\)</span>为单射）、用户的全局标识符 <span class="math inline">\(\mathsf{GID} \in \mathcal{GID}\)</span>，以及对应于<span class="math inline">\(M\)</span>的行子集索引<span class="math inline">\(I\subseteq[\ell]\)</span>的秘密密钥<span class="math inline">\(\{\mathsf{SK}_{\mathsf{GID},u} \}_{u\in\rho(I)}\)</span>作为输入。如果<span class="math inline">\((1,0,\ldots,0)\)</span>不在这些行<span class="math inline">\(M_{I}\)</span>的张成空间中，则解密失败。否则，解密者找到<span class="math inline">\(\{w_{x} \in\mathbb{Z}_{N} \}_{x\in I}\)</span>，使得<span class="math inline">\((1,0,\ldots,0)=\sum_{x\in I}w_{x} \cdot M_{x}^{|}\)</span>。对于所有<span class="math inline">\(x\in I\)</span>，解密算法首先计算</p>
 <p><span class="math display">\[\begin{aligned}
-&amp;D_{A,x} =e(C_{2,A,x},【\mathbf{h_{\mathsf{GID}}}+\mathbf{\mathbf{A}_{1}^{*}h}】_{2})e(C_{1,A,x},K_{\mathsf{GID},A,\rho(x)})^{-1} \\
+&amp;D_{A,x} =e(C_{2,A,x},【\mathbf{\mathbf{h}_{\mathsf{GID}}}+\mathbf{\mathbf{A}_{1}^{*}h}】_{2})e(C_{1,A,x},K_{\mathsf{GID},A,\rho(x)})^{-1} \\
 &amp;=【((\mathbf{A}_{1} \mathbf{d} \|\mathbf{U}_{A})\mathbf{M}_{x})^{\top} \cdot(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h})】_{T} \\
-&amp;D_{B,x} =e(C_{2,B,x},【\mathbf{h_{\mathsf{GID}}}】_{2})e(C_{1,B,x},K_{\mathsf{GID},B,\rho(x)})^{-1} \\
+&amp;D_{B,x} =e(C_{2,B,x},【\mathbf{\mathbf{h}_{\mathsf{GID}}}】_{2})e(C_{1,B,x},K_{\mathsf{GID},B,\rho(x)})^{-1} \\
 &amp;=【((-\mathbf{A}_{1} \mathbf{d} \|\mathbf{U}_{B})\mathbf{M}_{x})^{\top} \cdot\mathbf{h}_{\mathsf{GID}}】_{T}
 \end{aligned}\]</span></p>
 <p>然后计算 <span class="math inline">\(D=\prod_{x\in I}(D_{A,x} \cdot D_{B,x})^{w_{x}}=e(【\mathbf{A}_{1} \mathbf{d}】_{1},H)\)</span>。 最后输出 <span class="math inline">\(C\oplus \mathsf{Ext} (D ,\mathsf{seed})= \mathsf{msg}\)</span> .</p>
 <h2 id="五正确性">五、正确性</h2>
 <p>假设在<span class="math inline">\(\{\mathsf{SK}_{\mathsf{GID},u} \}\)</span>中的授权方对应于根据与<span class="math inline">\(CT\)</span>相关联的LSSS访问结构<span class="math inline">\((M,\rho)\)</span>的一个授权集，即相应的行索引子集<span class="math inline">\(I\)</span>对应于<span class="math inline">\(M\)</span>中在其张成空间中有<span class="math inline">\((1,0,\ldots,0)\)</span>的行。对于每个<span class="math inline">\(x\in I\)</span>，令<span class="math inline">\(\rho(x)\)</span>为相应的授权方。</p>
 <p><span class="math display">\[\begin{aligned}
-&amp;e(C_{2,A,x},【h_{\mathsf{GID}}+\mathbf{A}_{1}^{*}h】_{2}) \\
+&amp;e(C_{2,A,x},【\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*}h】_{2}) \\
 &amp;=e\left(【\left(\mathbf{A}_{1} \mathbf{d} || \mathbf{U}_{A} \right)\mathbf{M}_{x}+\mathbf{W}_{A,\rho(x)}^{\top} \cdot\mathbf{A}_{1} \mathbf{s}_{A,x}】_{1},【\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*} \mathbf{h}】_{2} \right) \\
 &amp;=【\left(\left(\mathbf{A}_{1} \mathbf{d}||\mathbf{U}_{A} \right)\mathbf{M}_{x} \right)^{\top} \cdot\left(\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)】_{T} \cdot【\left(\mathbf{A}_{1} \mathbf{s}_{A,x} \right)^{\top} \mathbf{W}_{A,\rho(x)} \cdot\left(\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)】_{T}
 \end{aligned}\]</span></p>
 <p>同样对于每个 <span class="math inline">\(x\in I\)</span></p>
 <p><span class="math display">\[\begin{aligned}
-e(C_{1,A,x},K_{\mathsf{GID},A,u})&amp; =e(【\mathbf{A}_{1} \mathbf{s}_{A,x}】_{1},【\mathbf{W}_{A,\rho(x)} \cdot(h_{\mathsf{GlD}}+\mathbf{A}_{1}^{*}h)】_{2}) \\
+e(C_{1,A,x},K_{\mathsf{GID},A,u})&amp; =e(【\mathbf{A}_{1} \mathbf{s}_{A,x}】_{1},【\mathbf{W}_{A,\rho(x)} \cdot(\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*}h)】_{2}) \\
 &amp;=【(\mathbf{A}_{1} \mathbf{s}_{A,x})^{\top} \mathbf{W}_{A,\rho(x)} \cdot(\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*} \mathbf{h})】_{T}.
 \end{aligned}\]</span></p>
 <p>因此,</p>
 <p><span class="math display">\[\begin{aligned}
-&amp;D_{A,x}=e(C_{2,A,x},【\mathbf{h_{\mathsf{GID}}}+\mathbf{A}_{1}^{*} \mathbf{h}】_{2})e(C_{1,A,x},K_{\mathsf{GID},A,u})^{-1} \\
+&amp;D_{A,x}=e(C_{2,A,x},【\mathbf{\mathbf{h}_{\mathsf{GID}}}+\mathbf{A}_{1}^{*} \mathbf{h}】_{2})e(C_{1,A,x},K_{\mathsf{GID},A,u})^{-1} \\
 &amp;=【\left(\left(\mathbf{A}_{1} \mathbf{d}||\mathbf{U}_{A} \right)\mathbf{M}_{x} \right)^{\top} \cdot \left(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)】_{T} \cdot \\
 &amp; \ \ \ \ \ 【\left(\mathbf{A}_{1} \mathbf{s}_{A,x} \right)^{\top} \mathbf{W}_{A,\rho(x)} \cdot\left(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)】_{T} \cdot \\
 &amp; \ \ \ \ \ 【\left(\mathbf{A}_{1} \mathbf{s}_{A,x} \right)^{\top} \mathbf{W}_{A,\rho(x)} \cdot\left(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)】_{T}^{-1} \\
@@ -610,7 +610,7 @@ e(C_{1,A,x},K_{\mathsf{GID},A,u})&amp; =e(【\mathbf{A}_{1} \mathbf{s}_{A,x}】_
 &amp;\left.=【\begin{array}{l} \sum_{x\in I}w_x\mathbf{M}_{x}^{\top} \left(\mathbf{A}_{1} \mathbf{d}||\mathbf{U}_{A} \right)^{\top} \cdot(\mathbf{h}_{\mathsf{GID}}+\mathbf{A}_{1}^{*} \mathbf{h})\\+\sum_{x\in I}w_x\mathbf{M}_{x}^{\top} \left(-\mathbf{A}_{1} \mathbf{d}||\mathbf{U}_{B} \right)^{\top} \cdot\mathbf{h}_{\mathsf{GID}} \end{array} \right.】_{T} \\
 &amp;\left.=【\begin{array}{l}(1,0,\ldots,0)\left(\mathbf{A}_1\mathbf{d} \parallel\mathbf{U}_A\right)^\top\cdot(\mathbf{h}_\mathsf{GID}+\mathbf{A}_1^*\mathbf{h})\\+(1,0,\ldots,0)\left(-\mathbf{A}_1\mathbf{d} \parallel\mathbf{U}_B\right)^\top\cdot\mathbf{h}_\mathsf{GID} \end{array} \right.】_T \\
 &amp;=【\left(\mathbf{A}_{1} \mathbf{d} \right)^{\top} \cdot\left(\mathbf{h}_{\mathsf{GlD}}+\mathbf{A}_{1}^{*} \mathbf{h} \right)+\left(-\mathbf{A}_{1} \mathbf{d} \right)^{\top} \cdot\mathbf{h}_{\mathsf{GlD}}】_{T} \\
-&amp;=【\left(\mathbf{A}_{1}d\right)^{\top} \cdot h_{\mathsf{GID}}+\left(\mathbf{A}_{1}d\right)^{\top} \cdot \mathbf{A}_{1}^{*}h-\left(\mathbf{A}_{1}d\right)^{\top} \cdot h_{\mathsf{GID}}】_{T} \\
+&amp;=【\left(\mathbf{A}_{1}d\right)^{\top} \cdot \mathbf{h}_{\mathsf{GID}}+\left(\mathbf{A}_{1}d\right)^{\top} \cdot \mathbf{A}_{1}^{*}h-\left(\mathbf{A}_{1}d\right)^{\top} \cdot \mathbf{h}_{\mathsf{GID}}】_{T} \\
 &amp;=【\left(\mathbf{A}_{1}d\right)^{\top} \cdot \mathbf{A}_{1}^{*}h】=e(【\mathbf{A}_{1} \mathbf{d}】_{1},H).
 \end{aligned}\]</span></p>
 <p>因此</p>
